@@ -1,0 +1,513 @@
+/* REGLAS GENERALES */
+
+* { 
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+nav img {
+    position: absolute;
+}
+  
+.nav > .nav-links {
+    float: right;
+}
+  
+.nav > .nav-links > a:hover {
+    background-color: #0000EC;
+    color: white; 
+}
+  
+.nav > #nav-check {
+    display: none;
+}
+
+.boton:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+}
+  
+.novedades h2 {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;  
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+  
+.episodios h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+
+.boton {
+    text-align: center;
+    background-color: #00F3BB;
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24; 
+    font-size: 18px;
+    border-spacing: 24px;
+}
+
+section h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+section h2 {
+    font-family: 'IBMPlexMono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.historia h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.historia p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.invit h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.topicos h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+.topicos p {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+i {
+    font-family: 'FontAwesome5Brands-Regular';
+    font-size: 18px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+
+/* REGLAS DESKTOP */
+@media (min-width:321px) {
+    .sticky {
+        height: 80px;
+    }
+    
+    .logo {
+        margin: 22px 0px 22px 100px;
+    }
+
+    .nav {
+        height: 80px;
+        width: 100%;
+        position: relative;
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 16px;
+        color: #060A24;
+    }
+    
+    .nav > .nav-links {
+        float: right;
+        padding: 18px 24px 18px 24px;
+    }
+    
+    .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #060A24;
+    }
+    
+    .nav > .nav-links > a:hover {
+        background-color: #0000EC;
+        color: white; 
+    }
+    
+    .nav > #nav-check {
+        display: none;
+    }
+
+    .boton {
+        margin: 56px 0 5px 200px;
+        width: 226px;
+        height: 48px;
+    }
+ 
+    section h1 {
+        margin-top: 120px;
+        margin-left: 200px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 64px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+    
+    section h2 {
+        max-width: 628px;
+        margin-top: 15px;
+        margin-left: 200px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+
+    .episodios {
+        position: relative;
+        height: 27%;
+        background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        z-index: 0;
+    }
+
+    .episodios iframe {
+        position: relative;
+        margin-left: 100px;
+        padding: 15px 15px 15px 15px;
+        width: 40.6%;
+        height: 10%;
+    }
+
+    svg.uno {
+        position: absolute;
+        width: 100%;
+        top: -2px;
+    }
+
+    svg.dos {
+        position: relative;
+        top: 5px;
+        width: 100%
+    }
+    .episodios h3 {
+        position: relative;
+        padding: 186px 0px 26px 200px;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 48px;    
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+    
+    .historia img {
+        position: absolute;
+        width: 457px;
+        margin-top: -150px;
+        margin-left: 200px;
+        z-index: 1;
+    }
+
+    .historia h3 {
+        margin: 20.4px 312px 8px 720px;
+        font-size: 48px;
+        color: #060A24;
+        letter-spacing: 0;
+    }
+    
+    .historia p {
+        margin: 24px 256px 245px 720px;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+    }
+
+    .invit h3 {
+        margin: 350px 0px 36px 200px;
+        font-size: 48px;
+    }
+
+    .invit img {
+        margin-right: -4px;
+        margin-bottom: -4px;
+        display: inline-flex;
+        width: 33.3%;
+        box-sizing: content-box;  
+    }
+
+    .topicos h3 {
+        margin: 64px 0px 56px 200px;
+        font-size: 48px;
+    }
+
+    .img {
+        width: 69px;
+    }
+    
+    .temaiken {
+        font-size: 24px;
+        display: inline-block;
+        text-align: center;
+        width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;    
+    }
+ 
+    .novedades {
+        position: relative;
+        height: 518px;
+        background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+
+    }
+
+    .novedades h2 {
+        padding-top: 213px;
+        font-size: 48px;
+    }
+    
+    #boton2 {
+        width: 24%;
+        margin-left: 38%;
+        margin-right: auto;
+        font-size: 18px;
+    }
+
+    footer p {
+        display: flex;
+        float: left;
+        margin-top: 36px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+        font-size: 16px;
+    }
+
+    i {
+        display: inline-flex;
+        float: right;
+        margin-top: 36px;
+        margin-right: 50px;
+    }
+} 
+
+/* REGLAS MOBILE */
+
+@media (max-width:320px) {
+    .stick {
+        background-color: white;
+        top: 0;
+        position: sticky;
+        z-index: 4;
+    }
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: #0000EC;
+    }
+      
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    } 
+    
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #0000EC;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    
+    .nav > .nav-links > a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        color: white;
+        padding: 13px 10px 13px 10px;
+    }
+    
+    .nav > #nav-check:checked ~ .nav-links {
+        height: 400%;
+    }
+
+    .nav {
+        height: 45px;
+        width: 100%;
+        position: relative;
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 16px;
+        color: #060A24;
+    }
+    
+    nav {
+        height: 50px;
+    }
+    .logo {
+        height: 50px;
+        width: 50px;
+        padding: 10px 0px 10px 16px;
+    }
+
+    .boton {
+        position: relative;
+        margin: 36px 5% 24px 5%;
+        width: 90%;
+        height: 48px;
+        z-index: 2;
+    }
+ 
+    section h1 {
+        margin-left: 16px;
+        max-width: 260px;
+    }
+    
+    section h2 {
+        width: 90%;
+        margin: 5% 5% 0% 5%;
+    }
+
+    svg.uno {
+        position: absolute;
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: -2000px;
+    }
+
+    svg.dos {
+        position: relative;
+        width: 100%;
+        margin-top: -80px;
+        margin-bottom: -4px;
+    }
+
+    .episodios {
+        position: relative;
+        width: 100%;
+        background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    }
+
+    .episodios h3 {
+        color: white;
+        padding: 160px 147px 20px 16px;
+        z-index: 0;
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+    
+    iframe {
+        position: relative;
+        width: 298px;
+        margin-left: 11px;
+        margin-right: auto;
+        margin-bottom: 11px;
+
+    }
+
+    .historia img {
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        margin-top: -50px;
+    }
+
+    .historia h3 {
+        margin: 27px 16px 8px 16px;
+    }
+    
+    .historia p {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .invit h3 {
+        margin: 54px 16px 14px 16px;
+    }
+
+    .invit img {
+        display: block;
+        width: 100%;
+        box-sizing: content-box;  
+    }
+
+    .topicos h3 {
+        margin: 48px 16px 24px 16px;
+    }
+
+    .topicos img {
+        width: 104px;
+        margin: 0px 108px 0px 108px;
+    }
+    
+    .topicos p {
+        text-align: center;
+        padding: 13px 5% 65px 5%;
+    }
+ 
+    .novedades {
+        background-image:linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    }
+
+    #episodios {
+        margin-top: -65px;
+    }
+
+    .novedades h2 {
+        padding: 90px 16px 0px 16px;
+    }
+    
+    footer p {
+        padding: 24px 46px 16px 46px;
+    }
+
+    i {
+        display: inline-block;
+        padding-bottom: 32px;
+        margin-left: 37px;
+    }
+} 
+ 
+    

@@ -1,0 +1,89 @@
+div.gris {
+    background-color: gray;
+    width: 600px;
+    height: 600px;
+    margin-top: 15px;
+    margin-left: 5%;
+    position: absolute;
+}
+
+div.blanco {
+    background-color: white;
+    width: 550px;
+    height: 550px;
+    margin-left: 25px;
+    margin-top: 25px;
+    border-radius: 50%;
+    position: relative;
+}
+
+img.reloj {
+    width: 500px;
+    height: 500px;
+    margin-top: 25px;
+    margin-left: 25px;
+    position: relative;
+}
+
+div.centro {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    background-image: black;
+    margin-top: -260px;
+    margin-left: 267.5px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+div.segundero {
+    width: 8px;
+    height: 235px;
+    left: 271px;
+    top: 70px;
+    transform-origin: 50% 87%;
+    background-color: red;
+    position: absolute;
+    z-index: 4;
+}
+
+div.hora {
+    width: 12px;
+    height: 180px;
+    left: 269px;
+    top: 120px;
+    transform-origin: 50% 87%;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+}
+
+div.min {
+    width: 8px;
+    height: 225px;
+    left: 271px;
+    top: 70px;
+    transform-origin: 50% 87%;
+    background-color: black;
+    position: absolute;
+    z-index: 3;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+div.segundero {
+    animation: rotate 60s infinite steps(60);
+}
+
+div.min {
+    animation: rotate 3600s steps(60);
+}
+
+div.hora {
+    animation: rotate 42300s steps(12);
+}
