@@ -1,0 +1,150 @@
+* { 
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.borde {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: gray;
+    z-index: 0;
+}
+
+.contenido {
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    margin-right: auto;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav > .nav-links {
+    float: right;
+}
+  
+.nav > .nav-links > a:hover {
+    background-color: #0000EC;
+    color: white; 
+}
+  
+.nav > #nav-check {
+    display: none;
+}
+
+.titulo {
+    width: 33%;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 33%;
+    text-align: center;
+}
+
+@media (min-width:321px) {
+    .sticky {
+        height: 80px;
+    }
+
+    nav {
+        height: 40px;
+        width: 100%;
+        position: relative;
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 16px;
+        color: #060A24;
+        z-index: 3;
+    }
+    
+    .nav > .nav-links {
+        float: right;
+        padding: 18px 24px 18px 24px;
+    }
+    
+    .nav > .nav-links > a {
+        display: inline-block;
+        padding: 13px 10px 13px 10px;
+        text-decoration: none;
+        color: #060A24;
+    }
+    
+    .nav > .nav-links > a:hover {
+        background-color: #0000EC;
+        color: white; 
+    }
+    
+    .nav > #nav-check {
+        display: none;
+    }
+}
+
+@media (max-width:320px) {
+    .stick {
+        background-color: white;
+        top: 0;
+        position: sticky;
+        z-index: 4;
+    }
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: #0000EC;
+    }
+      
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    } 
+    
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #0000EC;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    
+    .nav > .nav-links > a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        color: white;
+        padding: 13px 10px 13px 10px;
+    }
+    
+    .nav > #nav-check:checked ~ .nav-links {
+        height: 400%;
+    }
+
+    .nav {
+        height: 45px;
+        width: 100%;
+        position: relative;
+        font-family: 'IBM Plex Mono', sans-serif;
+        font-size: 16px;
+        color: #060A24;
+    }
+    
+    nav {
+        height: 50px;
+    }
+}
