@@ -1,25 +1,15 @@
+/* REGLAS GENERALES */
+
 * { 
     margin: 0px;
     box-sizing: border-box;
 }
 
-.borde {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: gray;
-    z-index: 0;
-}
-
 .contenido {
-    width: 90%;
-    height: 100%;
-    margin-left: 5%;
-    margin-right: auto;
-    background-color: white;
-    position: absolute;
+    width: 100%;
+    position: relative;
     z-index: 1;
-}
+} 
 
 .nav > .nav-links {
     float: right;
@@ -34,23 +24,41 @@
     display: none;
 }
 
-.titulo {
-    width: 33%;
+/*.fondo {
     position: absolute;
-    margin-top: 2%;
-    margin-left: 33%;
-    text-align: center;
+    max-width: 100%;
+    height: auto;
+    }
+*/
+
+.fondo {    
+    /*background-image: url(img/fondo.jpg); */
+    width: 100%;
+  }
+  /*@media (max-width:320px) { 
+    .fondo {
+    background-image: url(img/fondomobile.jpg);
+    width: 100%;
+    }
+  }*/
+.front {
+    height: 810px;
 }
 
-@media (min-width:321px) {
-    .sticky {
-        height: 80px;
-    }
+h1.titulo {
+    position: relative;
+    font-family: 'Varela', sans-serif;
+    color: white;
+    font-size: /*120px*/ 24px; 
+    text-align: center;
+    padding-top: /*320px*/0;
+    -webkit-text-stroke: 1px gray; 
 
+}
+@media (min-width:321px) {
     nav {
-        height: 40px;
         width: 100%;
-        position: relative;
+        position: absolute;
         font-family: 'IBM Plex Mono', sans-serif;
         font-size: 16px;
         color: #060A24;
